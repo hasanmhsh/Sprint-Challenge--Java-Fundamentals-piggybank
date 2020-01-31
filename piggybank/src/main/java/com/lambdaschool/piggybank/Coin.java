@@ -3,7 +3,7 @@ package com.lambdaschool.piggybank;
 public abstract class Coin extends Money {
     // Fields
     protected double coinValue;
-    protected Long addedCoins;
+    protected long addedCoins;
 
     // Constructors
     public Coin(CurrencyClass coinClass, double coinValue) {
@@ -17,4 +17,9 @@ public abstract class Coin extends Money {
     }
 
     // Properties
+
+    @Override
+    public String toString() {
+        return super.cClass.name() + " " + String.valueOf(addedCoins);
+    }
 }
