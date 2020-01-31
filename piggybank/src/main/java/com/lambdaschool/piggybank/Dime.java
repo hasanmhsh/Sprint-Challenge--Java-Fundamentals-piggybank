@@ -1,6 +1,6 @@
 package com.lambdaschool.piggybank;
 
-public class Dime extends Coin{
+public final class Dime extends Coin{
     // Constructors
     public Dime(){
         this(1L);

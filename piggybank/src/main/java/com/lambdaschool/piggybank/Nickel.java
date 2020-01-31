@@ -1,6 +1,6 @@
 package com.lambdaschool.piggybank;
 
-public class Nickel extends Coin{
+public final class Nickel extends Coin{
     // Constructors
     public Nickel(){
         this(1L);

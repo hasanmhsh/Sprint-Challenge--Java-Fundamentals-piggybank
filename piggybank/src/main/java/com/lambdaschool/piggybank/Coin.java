@@ -20,6 +20,6 @@ public abstract class Coin extends Money {
 
     @Override
     public String toString() {
-        return super.cClass.name() + " " + String.valueOf(addedCoins);
+        return  String.valueOf(addedCoins) + " " + super.cClass.name() +((addedCoins>1)?"s":"");
     }
 }

@@ -8,7 +8,11 @@ public class PiggybankApplication {
 
 
     public static void main(String[] args) {
-        SpringApplication.run(PiggybankApplication.class, args);
+        new PiggyBankWallet();
+        System.out.println(PiggyBankWallet.currentPGWallet.getValue());
+        System.out.println(PiggyBankWallet.currentPGWallet.getContents());
+
+        //SpringApplication.run(PiggybankApplication.class, args);
     }
 
 }
